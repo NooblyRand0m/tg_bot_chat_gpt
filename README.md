@@ -11,3 +11,19 @@ A list of greetings to randomly choose from when responding to user requests. Th
 Once you have set up the prerequisites, you can run the bot by executing the Python script. The bot will listen for user requests and generate responses using OpenAI API's text generation capabilities.
 
 For more information on the bot and how to set it up, please refer to the documentation in the repository.
+
+To run the bot, execute the "run_tg_bot_chat_gpt.bat" file which contains the following code:
+
+@echo off
+
+call %~dp0venv\Scripts\activate.bat
+
+set TOKEN=<your_telegram_bot_token>
+
+set OPENAI_API_KEY=<your_openai_api_key>
+
+python tg_bot_chat_gpt.py
+
+pause
+
+Make sure to replace "<your_telegram_bot_token>" and "<your_openai_api_key>" with your actual Telegram bot token and OpenAI API key respectively.
